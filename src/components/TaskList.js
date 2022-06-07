@@ -22,6 +22,8 @@ function TaskList(){
     setTasks(updatedTasks);
   }
 
+  
+
   return(
     <>
       <TaskForm onSubmit={addTask}/> 
@@ -33,6 +35,7 @@ function TaskList(){
               id={task.id}
               text={task.text} 
               completed={task.completed}
+              delateTask={delateTask}
             />          
           )
         }
