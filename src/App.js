@@ -1,6 +1,7 @@
 import './App.css';
 import logoCarolina from './images/Carolina.png'
 import Task from './components/Tasks';
+import TaskForm from './components/TaskForm'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div className='principal-tasks-list'>
         <h1> MIS TAREAS </h1>
         <Task text='Aprender React'/>
+        <TaskForm />
       </div>
     </div>
   );
