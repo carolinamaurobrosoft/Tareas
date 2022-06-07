@@ -22,7 +22,17 @@ function TaskList(){
     setTasks(updatedTasks);
   }
 
-  
+  const completeTask = id => {
+    const updatedTasks = tasks.map(task => {
+      if(task.id === id ){
+        task.completed = !task.completed; //si estaba completada la desmarco y viceversa
+      }
+      return task;
+    });
+    setTasks(updatedTasks);
+  }
+
+
 
   return(
     <>
@@ -36,6 +46,7 @@ function TaskList(){
               text={task.text} 
               completed={task.completed}
               delateTask={delateTask}
+              completeTask={completeTask}
             />          
           )
         }
