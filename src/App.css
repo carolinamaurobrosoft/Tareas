@@ -1,1 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: white;
+  background-color: #4E8098;
+  font-family: Lato, sans-serif;
+  margin-top: 40px;
+}
+
+h1 {
+  color:#486079;
+  font-size: 25px;
+  font-family: 'Montserrat',sans-serif;
+  text-align: center;
+  margin: 20px 0;
+  user-select: none;
+
+}
+/* Logo Carolina */
+
+.app-tasks{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  width: 100%;
+  height: auto;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* Tasks list*/
+.principal-tasks-list{
+  width: 600px;
+  min-height: 500px;
+  background-color: #8EAABA;
+  padding: 25px;
+  border: 1px solid black;
+  margin: 10px;
+  justify-content: center;
+  border-radius: 26px;
+}
